@@ -7,5 +7,5 @@
 - cd back into main directory and run `npm install` to install react dependencies
 - run `npm start` to start up the front-end
 - open a new terminal (in the same directory) and run `npm run start-backend` to start up the back-end
-- if the react app doesn't appear, navigate to `localhost:3000`
+- if the react app doesn't appear automatically, open a browser and navigate to `localhost:3000`
 - click the button to talk to the flask back-end!
