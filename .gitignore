@@ -24,5 +24,4 @@ yarn-error.log*
 
 # flask
 backend/env
-backend/.flaskenv
 backend/__pycache__
