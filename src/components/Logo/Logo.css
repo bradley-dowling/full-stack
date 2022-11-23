@@ -11,8 +11,9 @@
 
 .fs-logo-text {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: deepskyblue;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px deepskyblue;
     font-size: 64px;
     margin-top: 0px;
     margin-bottom: 0px;
