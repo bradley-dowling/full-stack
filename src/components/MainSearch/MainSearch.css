@@ -1,0 +1,14 @@
+.main-search-container {
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-search-container .search-form {
+    margin-top: 20px;
+}

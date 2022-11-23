@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+.fs-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.fs-logo-image {
+    height: 80px;
+}
+
+.fs-logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: deepskyblue;
+    font-size: 64px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}

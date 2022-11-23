@@ -1,0 +1,7 @@
+.card {
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 8px 8px deepskyblue;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,20 +1,18 @@
 import { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import axios from 'axios';
+import MainSearch from './components/MainSearch/MainSearch';
 
 function App() {
 
-  const [msgData, setMsgData] = useState(null);
+  const [searchData, setSearchData] = useState(null);
 
-  function getData() {
+  function search() {
     axios({
       method: "GET",
-      url: "/hello",
+      url: "/search",
     }).then((response) => {
       const res = response.data;
-      console.log(res);
-      setMsgData(({
+      setSearchData(({
         msg: res.msg,
       }))
     }).catch((error) => {
@@ -28,14 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={getData}>Click me</button>
-        {msgData && <div>
-              <p>Message: {msgData.msg}</p>
-            </div>
-        }
-      </header>
+      <MainSearch></MainSearch>
     </div>
   );
 }
