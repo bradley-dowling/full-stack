@@ -8,11 +8,12 @@ function PageSelector(props) {
     }
 
     const pages = []
+
     for (let i = 1; i <= props.totalPages; i++) {
         if (i === props.currentPage) {
-            pages.push(<p className="current-page">{i}</p>);
+            pages.push(<p key={i} className="current-page">{i}</p>);
         } else {
-            pages.push(<p className="other-page">{i}</p>);
+            pages.push(<p key={i} className="other-page">{i}</p>);
         }
     }
 

@@ -6,7 +6,10 @@ import PageSelector from '../PageSelector/PageSelector';
 
 function PageSearch(props) {
 
-    const searchResults = [];
+    const searchResults = props.searchData.results;
+    const currentPage = props.searchData.current_page;
+    const totalPages = props.searchData.page_count;
+
     const onLogoClickHandler = () => {
         props.onLogoClick();
     }
@@ -22,7 +25,7 @@ function PageSearch(props) {
                 <Logo onLogoClick={onLogoClickHandler}></Logo>
             </div>
             <SearchResultList searchResults={searchResults}></SearchResultList>
-            <PageSelector onLogoClick={onLogoClickHandler}></PageSelector>
+            <PageSelector onLogoClick={onLogoClickHandler} totalPages={totalPages} currentPage={currentPage}></PageSelector>
         </div>
     );
 }

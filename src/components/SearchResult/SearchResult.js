@@ -8,7 +8,7 @@ function SearchResult(props) {
   return (
     <div className="search-result">
         <p className="page-link">{page_link}</p>
-        <a className="page-title" href={page_link}>{page_title}</a>
+        <a className="page-title" href={page_link} target='_blank'>{page_title}</a>
         <p className="page-context">{page_context}</p>
         <button className="page-more-btn">[ + More ]</button>
     </div>
