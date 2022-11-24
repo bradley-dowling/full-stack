@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+.nav-search-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 2px 8px 0px lightgray;
+}
+
+.nav-search-container .search-form {
+    width: 75%;
+}
+
+.nav-search-container .fs-logo-image {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

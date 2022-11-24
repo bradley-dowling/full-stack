@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.73 157.5">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 737.23 158.52">
   <defs>
     <style>
-      .cls-1 {
-        fill: #00bfff;
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: LucidaSans-Typewriter, 'Lucida Sans Typewriter';
+        font-size: 100px;
+        stroke: #000;
+        stroke-miterlimit: 10;
       }
     </style>
   </defs>
-  <g>
-    <rect class="cls-1" y="17.5" width="10" height="140"/>
-    <rect class="cls-1" y="17.5" width="141.64" height="10"/>
-    <rect class="cls-1" x="140" y="17.5" width="10" height="140"/>
-    <rect class="cls-1" y="147.5" width="143.54" height="10"/>
-    <rect class="cls-1" x="2" y="82.5" width="30" height="10"/>
-    <rect class="cls-1" y="117.5" width="141.64" height="10"/>
-    <rect class="cls-1" y="48.5" width="32" height="10"/>
-    <rect class="cls-1" x="77.16" y="48.5" width="67.84" height="10"/>
-    <rect class="cls-1" x="27" y="33.5" width="55.16" height="10"/>
-    <rect class="cls-1" x="27" y="33.5" width="10" height="79.06"/>
-    <rect class="cls-1" x="72.16" y="33.5" width="10" height="79.06"/>
-    <rect class="cls-1" x="77.16" y="82.5" width="66.38" height="10"/>
-    <rect class="cls-1" x="28.39" y="91.62" width="34.82" height="10" transform="translate(-54.91 60.69) rotate(-45)"/>
-    <rect class="cls-1" x="58.35" y="79.21" width="10" height="34.82" transform="translate(-49.77 73.1) rotate(-45)"/>
-    <rect class="cls-1" x="167.73" y="0" width="10" height="140"/>
-    <rect class="cls-1" x="27.97" y="0" width="141.57" height="10"/>
-    <rect class="cls-1" x="144.65" y="139.52" width="32.94" height="10" transform="translate(-52.14 107.57) rotate(-32.06)"/>
-    <rect class="cls-1" x="140.14" y="10.38" width="32.94" height="10" transform="translate(15.73 85.48) rotate(-32.06)"/>
-    <rect class="cls-1" x=".14" y="7.98" width="32.94" height="10" transform="translate(-4.36 10.8) rotate(-32.06)"/>
-    <rect class="cls-1" x="143.47" y="40.52" width="32.94" height="10" transform="translate(.23 91.84) rotate(-32.06)"/>
-    <rect class="cls-1" x="143.98" y="74.52" width="32.94" height="10" transform="translate(-17.74 97.3) rotate(-32.06)"/>
-    <rect class="cls-1" x="144.1" y="109.52" width="32.94" height="10" transform="translate(-36.3 102.7) rotate(-32.06)"/>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <path class="cls-1" d="M249.1,157.52V18.29L276.71,1h149.17V140.34l-27.43,17.18H249.1Zm9-9h131v-21h-131v21Zm140-21.24v19.73l18.78-11.77v-19.73l-18.78,11.77Zm-140-8.76h131v-26h-58.84v20.06h-9.29l-17.79-17.79-17.79,17.79h-9.29v-20.06h-18v26Zm140-26.31v24.45l18.78-11.77v-24.45l-18.78,11.77Zm-88.17-3.46l11.33,11.33V43.52h-36.16v56.56l11.68-11.68h0s6.4-6.4,6.4-6.4l6.43,6.43,.32,.33Zm20.33-5.23h58.84v-25h-58.84v25Zm-72.16,0h18v-25h-18v25Zm140-25.63v23.7l18.78-11.77v-23.7l-18.78,11.77Zm-67.84-8.37h58.84V27.52h-131v22h18v-15h54.16v15Zm67.84-23.86v21.61l18.78-11.77V13.89l-18.78,11.77Zm-132.43-7.14h126.87l13.58-8.5h-126.87l-13.58,8.5Z"/>
+        <path d="M425.38,1.5V140.06l-27.07,16.96H249.6V18.57L276.85,1.5h148.53m-161.45,17.52h128.75l.24-.15,11.98-7.5,2.95-1.85h-128.75l-.24,.15-11.98,7.5-2.95,1.85m133.67,29.15l1.53-.96,17.78-11.14,.47-.29V12.99l-1.53,.96-17.78,11.14-.47,.29v22.79m-140,1.85h19v-15h53.16v15h59.84V27.02h-132v23m27,51.27l1.71-1.71,10.48-10.48,.71-.72h0s5.68-5.68,5.68-5.68l5.69,5.69h0s.71,.71,.71,.71l10.48,10.48,1.71,1.71V43.02h-37.16v58.27m113-18.79l1.53-.96,17.78-11.14,.47-.29v-24.88l-1.53,.96-17.78,11.14-.47,.29v24.88m-67.84,1.53h59.84v-26h-59.84v26m-72.16,0h19v-26h-19v26m140,33.54l1.53-.96,17.78-11.14,.47-.29v-25.63l-1.53,.96-17.78,11.14-.47,.29v25.63m-67.84-5.49h-8.59l-17.29-17.29-.71-.71-.71,.71-17.29,17.29h-8.59v-20.06h-19v27h132v-27h-59.84v20.06m67.84,35.83l1.53-.96,17.78-11.14,.47-.29v-20.91l-1.53,.96-17.78,11.14-.47,.29v20.91m-140,1.11h132v-22h-132v22M426.38,.5h-149.82l-27.97,17.52V158.02h150l27.78-17.4h0s0,0,0,0h0V.5h0Zm-158.97,17.52l11.98-7.5h124.99l-11.98,7.5h-124.99Zm131.19,28.34V25.93l17.78-11.14v20.43l-17.78,11.14h0Zm-140,2.66V28.02h130v21h-57.84v-15h-55.16v15h-17Zm27,49.85V44.02h35.16v54.85l-10.48-10.48h0s-7.1-7.1-7.1-7.1h0s0,0,0,0l-7.1,7.1h0s-10.48,10.48-10.48,10.48h0Zm113-18.19v-22.52l17.78-11.14v22.52l-17.78,11.14h0Zm-67.84,2.33v-24h57.84v24h-57.84Zm-72.16,0v-24h17v24h-17Zm140,32.74v-23.27l17.78-11.14v23.27l-17.78,11.14h0Zm-77.84-2.68h10v-20.06h57.84v25h-130v-25h17v20.06h10l17.58-17.58,17.58,17.58h0Zm77.84,33.03v-18.55l17.78-11.14v18.55l-17.78,11.14h0Zm-140,1.92v-20h130v20h-130Z"/>
+      </g>
+      <text class="cls-2" transform="translate(.5 118.02)"><tspan x="0" y="0">Full</tspan></text>
+      <text class="cls-2" transform="translate(435.46 118.02)"><tspan x="0" y="0">Stack</tspan></text>
+    </g>
   </g>
 </svg>

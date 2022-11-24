@@ -1,4 +1,4 @@
-import SearchResult from "./SearchResult";
+import SearchResult from "../SearchResult/SearchResult";
 import './SearchResultList.css';
 
 function SearchResultList(props) {

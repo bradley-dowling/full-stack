@@ -3,6 +3,10 @@ import './PageSelector.css';
 
 function PageSelector(props) {
 
+    const onLogoClickHandler = () => {
+        props.onLogoClick();
+    }
+
     const pages = []
     for (let i = 1; i <= props.totalPages; i++) {
         if (i === props.currentPage) {
@@ -14,7 +18,7 @@ function PageSelector(props) {
 
     return (
         <div className='page-selector'>
-            <Logo className='page-selector-logo'></Logo>
+            <Logo className='page-selector-logo' onLogoClick={onLogoClickHandler}></Logo>
             <div className='page-flex-container'>
                 {pages}
             </div>

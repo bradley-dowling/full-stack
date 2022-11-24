@@ -5,18 +5,11 @@
     align-items: center;
 }
 
-.fs-logo-image {
-    height: 80px;
+.fs-logo-container:hover {
+    cursor: pointer;
 }
 
-.fs-logo-text {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 2px 2px deepskyblue;
-    font-size: 64px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 12px;
-    margin-right: 12px;
+.fs-logo-image {
+    height: 80px;
+    filter: drop-shadow(2px 2px deepskyblue);
 }

@@ -3,9 +3,13 @@ import SearchForm from '../SearchForm/SearchForm';
 import './MainSearch.css';
 
 function MainSearch(props) {
+    const onLogoClickHandler = () => {
+        props.onLogoClick();
+    }
+
     return (
         <div className="main-search-container">
-            <Logo></Logo>
+            <Logo onLogoClick={onLogoClickHandler}></Logo>
             <SearchForm></SearchForm>
         </div>
     );

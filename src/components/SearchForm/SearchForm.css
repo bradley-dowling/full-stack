@@ -4,7 +4,7 @@
     display: flex;
     border: 1px solid black;
     border-radius: 4px;
-    box-shadow: 8px 8px deepskyblue;
+    box-shadow: 2px 2px deepskyblue;
     width: 100%;
 }
 
@@ -14,13 +14,18 @@
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: monospace;
     background-color: white;
     flex-grow: 1;
 }
 
 .search-form input:focus {
     outline: none;
+    caret-color: deepskyblue;
+}
+
+.search-form input::placeholder {
+    opacity: 0.5;
 }
 
 .search-form button {

@@ -20,6 +20,7 @@ function Form(props) {
     <form className="search-form" onSubmit={submitHandler}>
         <input
           type="text"
+          placeholder="Search the stacks for books or authors..."
           value={formInputValue}
           onChange={formInputChangeHandler}
         />

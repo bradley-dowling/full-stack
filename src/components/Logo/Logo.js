@@ -1,12 +1,16 @@
 import {ReactComponent as FSLogo} from '../../resources/Logo.svg';
+import React, { useState } from 'react';
 import './Logo.css';
 
-function Logo() {
+function Logo(props) {
+
+    const logoClickHandler = () => {
+        props.onLogoClick();
+    }
+
     return (
-        <div className='fs-logo-container'>
-            <p className='fs-logo-text'>Full</p>
+        <div className='fs-logo-container' onClick={logoClickHandler}>
             <FSLogo className="fs-logo-image"/>
-            <p className='fs-logo-text'>Stack</p>
         </div>
     );
 }

@@ -1,32 +1,19 @@
 import { useState } from 'react';
 import axios from 'axios';
 import MainSearch from './components/MainSearch/MainSearch';
+import PageSearch from './components/PageSearch/PageSearch';
 
 function App() {
 
-  const [searchData, setSearchData] = useState(null);
+  const [pageSearchState, setPageSearchState] = useState(false);
 
-  function search() {
-    axios({
-      method: "GET",
-      url: "/search",
-    }).then((response) => {
-      const res = response.data;
-      setSearchData(({
-        msg: res.msg,
-      }))
-    }).catch((error) => {
-      if (error.response) {
-        console.log(error.response);
-        console.log(error.response.status);
-        console.log(error.response.headers);
-      }
-    });
+  const onLogoClickHandler = () => {
+    setPageSearchState(false);
   }
 
   return (
     <div className="App">
-      <MainSearch></MainSearch>
+      {pageSearchState ? <PageSearch onLogoClick={onLogoClickHandler}></PageSearch> : <MainSearch onLogoClick={onLogoClickHandler}></MainSearch>}
     </div>
   );
 }
