@@ -11,10 +11,14 @@ function PageSearch(props) {
         props.onLogoClick();
     }
 
+    const onSearchClickHandler = () => {
+        props.onSearchClick();
+    }
+
     return (
         <div>
             <div className='nav-search-container'>
-                <SearchForm></SearchForm>
+                <SearchForm onSearchClick={onSearchClickHandler}></SearchForm>
                 <Logo onLogoClick={onLogoClickHandler}></Logo>
             </div>
             <SearchResultList searchResults={searchResults}></SearchResultList>

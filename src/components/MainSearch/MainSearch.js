@@ -7,10 +7,14 @@ function MainSearch(props) {
         props.onLogoClick();
     }
 
+    const onSearchClickHandler = () => {
+        props.onSearchClick();
+    }
+
     return (
         <div className="main-search-container">
             <Logo onLogoClick={onLogoClickHandler}></Logo>
-            <SearchForm></SearchForm>
+            <SearchForm onSearchClick={onSearchClickHandler}></SearchForm>
         </div>
     );
 }

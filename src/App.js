@@ -6,14 +6,25 @@ import PageSearch from './components/PageSearch/PageSearch';
 function App() {
 
   const [pageSearchState, setPageSearchState] = useState(false);
+  const [searchData, setSearchData] = useState(null);
 
   const onLogoClickHandler = () => {
     setPageSearchState(false);
   }
 
+  const onSearchClickHandler = () => {
+    setPageSearchState(true);
+  }
+
+  let searchUI = <MainSearch onLogoClick={onLogoClickHandler} onSearchClick={onSearchClickHandler}></MainSearch>;
+
+  if (pageSearchState) {
+    searchUI = <PageSearch onLogoClick={onLogoClickHandler} onSearchClick={onSearchClickHandler}></PageSearch>;
+  }
+
   return (
     <div className="App">
-      {pageSearchState ? <PageSearch onLogoClick={onLogoClickHandler}></PageSearch> : <MainSearch onLogoClick={onLogoClickHandler}></MainSearch>}
+      {searchUI}
     </div>
   );
 }
