@@ -19,14 +19,14 @@ function PageSelector(props) {
     let current_page = parseInt(props.searchData.current_page);
     let total_pages = parseInt(props.searchData.page_count);
     let start = 1;
-    let end = 10;
+    let end = 11;
 
     if (current_page > 5) {
         start = current_page - 5;
-        end = current_page + 4;
+        end = current_page + 5;
 
         if (end >= total_pages) {
-            start = Math.max(1, total_pages - 9);
+            start = Math.max(1, total_pages - 10);
         }
     }
 
