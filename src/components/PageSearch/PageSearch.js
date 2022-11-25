@@ -6,26 +6,24 @@ import PageSelector from '../PageSelector/PageSelector';
 
 function PageSearch(props) {
 
-    const searchResults = props.searchData.results;
-    const currentPage = props.searchData.current_page;
-    const totalPages = props.searchData.page_count;
+    const searchData = props.searchData;
 
     const onLogoClickHandler = () => {
         props.onLogoClick();
     }
 
-    const onSearchClickHandler = () => {
-        props.onSearchClick();
+    const onSearchClickHandler = (newSearch) => {
+        props.onSearchClick(newSearch);
     }
 
     return (
         <div>
             <div className='nav-search-container'>
-                <SearchForm onSearchClick={onSearchClickHandler}></SearchForm>
+                <SearchForm onSearchClick={onSearchClickHandler} searchData={searchData}></SearchForm>
                 <Logo onLogoClick={onLogoClickHandler}></Logo>
             </div>
-            <SearchResultList searchResults={searchResults}></SearchResultList>
-            <PageSelector onLogoClick={onLogoClickHandler} totalPages={totalPages} currentPage={currentPage}></PageSelector>
+            <SearchResultList searchData={searchData}></SearchResultList>
+            <PageSelector onLogoClick={onLogoClickHandler} onSearchClick={onSearchClickHandler} searchData={searchData}></PageSelector>
         </div>
     );
 }

@@ -10,8 +10,9 @@ def hello():
 
     return response_body
 
-@api.route('/search')
-def search():
+@api.route('/search/<query>/<page_number>')
+def search(query=None, page_number=None):
+    
     response_body = {
         "results": [
             {
@@ -40,7 +41,8 @@ def search():
             }
         ],
         "page_count": 10,
-        "current_page": 1
+        "current_page": page_number,
+        "query": query
     }
 
     return response_body

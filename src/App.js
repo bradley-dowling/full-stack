@@ -4,24 +4,22 @@ import PageSearch from './components/PageSearch/PageSearch';
 
 function App() {
 
-  const [pageSearchState, setPageSearchState] = useState(false);
   const [searchData, setSearchData] = useState(null);
 
   const onLogoClickHandler = () => {
     setSearchData(null);
   }
 
-  const onSearchClickHandler = () => {
-    fetch("/search").then((response) => {
+  const onSearchClickHandler = (newSearch) => {
+    fetch(`/search/${newSearch.query}/${newSearch.page}`).then((response) => {
       return response.json();
     }).then((data) => {
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
       return setSearchData(data);
     }).catch((err) => {
       console.log(err);
     });
   }
-
-  console.log(searchData);
 
   let searchUI = <MainSearch onLogoClick={onLogoClickHandler} onSearchClick={onSearchClickHandler}></MainSearch>;
 

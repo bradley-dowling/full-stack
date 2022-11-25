@@ -7,8 +7,8 @@ function MainSearch(props) {
         props.onLogoClick();
     }
 
-    const onSearchClickHandler = () => {
-        props.onSearchClick();
+    const onSearchClickHandler = (newSearch) => {
+        props.onSearchClick(newSearch);
     }
 
     return (

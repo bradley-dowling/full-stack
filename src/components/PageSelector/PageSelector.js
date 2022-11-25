@@ -7,13 +7,20 @@ function PageSelector(props) {
         props.onLogoClick();
     }
 
-    const pages = []
+    const onPageClickHandler = (page_num) => {
+        let newSearch = {
+            page: page_num,
+            query: props.searchData.query
+        }
+        props.onSearchClick(newSearch);
+    }
 
-    for (let i = 1; i <= props.totalPages; i++) {
-        if (i === props.currentPage) {
+    const pages = []
+    for (let i = 1; i <= props.searchData.page_count; i++) {
+        if (i == props.searchData.current_page) {
             pages.push(<p key={i} className="current-page">{i}</p>);
         } else {
-            pages.push(<p key={i} className="other-page">{i}</p>);
+            pages.push(<p key={i} className="other-page" onClick={() => onPageClickHandler(i)}>{i}</p>);
         }
     }
 

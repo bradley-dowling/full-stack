@@ -3,7 +3,7 @@ import './SearchResultList.css';
 
 function SearchResultList(props) {
 
-  const searchResults = props.searchResults.map((result) => (
+  const searchResults = props.searchData.results.map((result) => (
     <SearchResult
       key={result.page_id}
       page_title={result.page_title}
