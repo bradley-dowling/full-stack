@@ -15,6 +15,7 @@ function PageSelector(props) {
         props.onSearchClick(newSearch);
     }
 
+    // determine the number of pages to show in the selector...
     const pages = []
     let current_page = parseInt(props.searchData.current_page);
     let total_pages = parseInt(props.searchData.page_count);
@@ -30,12 +31,9 @@ function PageSelector(props) {
         }
     }
 
-    console.log(start)
-    console.log(end)
-
     for (let i = start; i <= end; i++) {
         if (i > props.searchData.page_count) {
-            break;
+            break;  // no more pages to show 
         }
 
         if (i == props.searchData.current_page) {
