@@ -15,6 +15,7 @@ function MainSearch(props) {
         <div className="main-search-container">
             <Logo onLogoClick={onLogoClickHandler}></Logo>
             <SearchForm onSearchClick={onSearchClickHandler}></SearchForm>
+            <p className='main-footer'>A Search Engine by Brad and Ramiz...</p>
         </div>
     );
 }

@@ -49,6 +49,7 @@ function PageSelector(props) {
             <div className='page-flex-container'>
                 {pages}
             </div>
+            <p className='page-selector-footer'>A Search Engine by Brad and Ramiz...</p>
         </div>
     );
 }

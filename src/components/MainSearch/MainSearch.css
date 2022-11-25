@@ -12,3 +12,8 @@
 .main-search-container .search-form {
     margin-top: 20px;
 }
+
+.main-footer {
+    margin-top: 20px;
+    font-size: small;
+}
