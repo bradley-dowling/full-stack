@@ -16,7 +16,28 @@ function PageSelector(props) {
     }
 
     const pages = []
-    for (let i = 1; i <= props.searchData.page_count; i++) {
+    let current_page = parseInt(props.searchData.current_page);
+    let total_pages = parseInt(props.searchData.page_count);
+    let start = 1;
+    let end = 10;
+
+    if (current_page > 5) {
+        start = current_page - 5;
+        end = current_page + 4;
+
+        if (end >= total_pages) {
+            start = Math.max(1, total_pages - 9);
+        }
+    }
+
+    console.log(start)
+    console.log(end)
+
+    for (let i = start; i <= end; i++) {
+        if (i > props.searchData.page_count) {
+            break;
+        }
+
         if (i == props.searchData.current_page) {
             pages.push(<p key={i} className="current-page">{i}</p>);
         } else {
