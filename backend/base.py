@@ -1,6 +1,9 @@
+import json
 from flask import Flask
+from whoosh_index import *
 
 api = Flask(__name__)
+whoosh_idx = WhooshIndex('index')
 
 @api.route('/hello')
 def hello():
@@ -12,35 +15,13 @@ def hello():
 
 @api.route('/search/<query>/<page_number>')
 def search(query=None, page_number=None):
+    # results, total_pages = whoosh_idx.search_index(query, page_number)
+    total_pages = 10
+    dummy_results = json.load(open("data/dummy.json"))
     
     response_body = {
-        "results": [
-            {
-                "page_id": 1,
-                "page_title": 'Hello World',
-                "page_link": 'http://example.com',
-                "page_context": '...this is a hello world test...'
-            },
-            {
-                "page_id": 2,
-                "page_title": 'Hello World',
-                "page_link": 'http://example.com',
-                "page_context": '...this is a hello world test...'
-            },
-            {
-                "page_id": 3,
-                "page_title": 'Hello World',
-                "page_link": 'http://example.com',
-                "page_context": '...this is a hello world test...'
-            },
-            {
-                "page_id": 4,
-                "page_title": 'Hello World',
-                "page_link": 'http://example.com',
-                "page_context": '...this is a hello world test...'
-            }
-        ],
-        "page_count": 10,
+        "results": dummy_results,
+        "page_count": total_pages,
         "current_page": page_number,
         "query": query
     }
