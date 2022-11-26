@@ -9,6 +9,7 @@ function SearchResultList(props) {
       page_title={result.page_title}
       page_link={result.page_link}
       page_context={result.page_context}
+      page_book_info={result.page_book_info}
     ></SearchResult>
   ));
 

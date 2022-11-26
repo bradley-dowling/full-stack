@@ -1,7 +1,29 @@
 .card {
     position: relative;
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
     border: 1px solid black;
+    border-radius: 4px;
     box-shadow: 8px 8px deepskyblue;
     margin: 20px;
     padding: 20px;
+    font-family: monospace;
 }
+
+.book-cover {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.book-author {
+    font-style: italic;
+    font-size: 16px;
+}
+

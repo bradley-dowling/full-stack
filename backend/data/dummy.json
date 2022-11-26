@@ -9,7 +9,13 @@
         "page_id": 2,
         "page_title": "Hello World",
         "page_link": "http://example.com",
-        "page_context": "...this is a hello world test..."
+        "page_context": "...this is a hello world test...",
+        "page_book_info": {
+            "bookCover": "https://covers.powells.com/9780767908184.jpg",
+            "bookTitle": "A Short History of Nearly Everything",
+            "bookAuthor": "Bill Bryson",
+            "bookISBN": "128401257"
+        }
     },
     {
         "page_id": 3,

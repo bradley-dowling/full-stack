@@ -1,6 +1,7 @@
 import Logo from '../Logo/Logo';
 import SearchForm from '../SearchForm/SearchForm';
 import './MainSearch.css';
+import Card from '../Card/Card';
 
 function MainSearch(props) {
     const onLogoClickHandler = () => {
@@ -9,6 +10,13 @@ function MainSearch(props) {
 
     const onSearchClickHandler = (newSearch) => {
         props.onSearchClick(newSearch);
+    }
+
+    let bookInfo = {
+        bookCover: "https://covers.powells.com/9780767908184.jpg",
+        bookTitle: "A Short History of Nearly Everything",
+        bookAuthor: "Bill Bryson",
+        bookISBN: "128401257"
     }
 
     return (

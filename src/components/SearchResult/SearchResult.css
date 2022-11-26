@@ -3,6 +3,10 @@
 .search-result {
   font-family: 'Montserrat', sans-serif;
   margin: 40px;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: deepskyblue;
+  padding-left: 20px;
 }
 
 .page-title {
@@ -29,7 +33,8 @@
 .page-more-btn {
   margin-top: 6px;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
+  font-family: monospace;
+  color: deepskyblue;
   border: none;
   background: none;
 }

@@ -15,6 +15,7 @@ function App() {
       return response.json();
     }).then((data) => {
       window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      console.log(data);
       return setSearchData(data);
     }).catch((err) => {
       console.log(err);

@@ -13,6 +13,9 @@ function SearchForm(props) {
   const [searchQuery, setSearchQuery] = useState(startingInput);
   const submitHandler = (event) => {
     event.preventDefault();
+    if (searchQuery.trim() == '') {
+      return;
+    }
     let newSearch = {
       query: searchQuery,
       page: 1
