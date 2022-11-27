@@ -17,7 +17,7 @@ def hello():
 def search(query=None, page_number=None):
     # results, total_pages = whoosh_idx.search_index(query, page_number)
     total_pages = 21
-    dummy_results = json.load(open("data/dummy.json"))
+    dummy_results = json.load(open("dummy.json"))
     
     response_body = {
         "results": dummy_results,
