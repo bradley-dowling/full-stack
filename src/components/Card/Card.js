@@ -8,7 +8,7 @@ function Card(props) {
 
     return (
         <div className="card">
-            <img className="book-cover" src={bookCover}/>
+            <img className="book-cover" src={bookCover} alt="Image not found"/>
             <div className="book-info-container">
                 <p className="book-title">{bookTitle}</p>
                 <p className="book-author">By: {bookAuthor}</p>

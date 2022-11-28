@@ -1,4 +1,4 @@
-from whoosh.fields import Schema, TEXT, STORED, ID
+from whoosh.fields import Schema, TEXT, STORED, ID, NUMERIC
 from whoosh.analysis import StemmingAnalyzer
 
 schema = Schema(
@@ -9,5 +9,6 @@ schema = Schema(
                 book_author=TEXT(stored=True),
                 book_isbn10=TEXT(stored=True),
                 book_isbn13=TEXT(stored=True),
-                book_cover=STORED
+                book_cover=STORED,
+                page_rank=NUMERIC(sortable=True)
                 )

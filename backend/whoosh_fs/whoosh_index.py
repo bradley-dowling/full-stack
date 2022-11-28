@@ -12,7 +12,7 @@ class WhooshIndex:
         with ix.searcher() as searcher:
             qp = QueryParser("page_content", schema=ix.schema)
             q = qp.parse(query_string)
-            results = searcher.search_page(q, page_num)
+            results = searcher.search_page(q, page_num, sortedby="page_rank")
             results_len = len(results)
             total_pages = int(results_len / DEFAULT_PAGELENGTH) + 1
             results_dict = {"data": [dict(hit) for hit in results]}

@@ -12,6 +12,7 @@ for filename in os.listdir("raw"):
         writer.add_document(page_title=data['Title'].strip(),
                             page_url=data['Page URL'].strip(),
                             page_content=data['raw_text'].strip(),
+                            page_rank=float(data["page_rank"]),
                             book_title=data['Title'].strip(),
                             book_author=data['Author'].strip(),
                             book_isbn10=data['ISBN10'].strip(),
