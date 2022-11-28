@@ -5,7 +5,7 @@
 - install flask with `pip install flask`
 - install python-dotenv with `pip install python-dotenv`
 - install whoosh with `pip install Whoosh`
-- cd back into main directory and run `npm install` to install react dependencies
+- cd back into main directory and run `npm install` to install react dependencies (NOTE: you may need to install Node.js)
 - run `npm start` to start up the front-end
 - open a new terminal (in the same directory) and run `npm run start-backend` to start up the back-end
 - if the react app doesn't appear automatically, open a browser and navigate to `localhost:3000`
