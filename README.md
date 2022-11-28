@@ -1,5 +1,5 @@
 # Full Stack Search Engine
-By Bradley Dowling and Ramiz
+By Bradley Dowling and Ramiz Tanous
 ### Setup:
 - after cloning, cd into `backend`
 - install the virtual python environment with `python -m venv env` (NOTE: you may need to install venv as well)
