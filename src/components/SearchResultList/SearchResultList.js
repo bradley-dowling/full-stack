@@ -3,13 +3,18 @@ import './SearchResultList.css';
 
 function SearchResultList(props) {
 
-  const searchResults = props.searchData.results.map((result) => (
+  const searchResults = props.searchData.results.data.map((result) => (
     <SearchResult
-      key={result.page_id}
+      key={result.book_isbn13}
       page_title={result.page_title}
-      page_link={result.page_link}
+      page_link={result.page_url}
       page_context={result.page_context}
-      page_book_info={result.page_book_info}
+      page_book_info={{
+        bookCover: result.book_cover,
+        bookAuthor: result.book_author,
+        bookTitle: result.page_title,
+        bookISBN: result.book_isbn13
+      }}
     ></SearchResult>
   ));
 

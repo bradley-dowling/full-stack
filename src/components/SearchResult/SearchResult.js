@@ -16,7 +16,6 @@ function SearchResult(props) {
   const bookInfo = props.page_book_info;
 
   let moreBtn;
-  console.log(bookInfo);
 
   if (bookInfo) {
     if (moreState) {

@@ -15,5 +15,6 @@ class WhooshIndex:
             results = searcher.search_page(q, page_num)
             results_len = len(results)
             total_pages = int(results_len / DEFAULT_PAGELENGTH) + 1
-        
-        return list(results), total_pages
+            results_dict = {"data": [dict(hit) for hit in results]}
+
+        return results_dict, total_pages
