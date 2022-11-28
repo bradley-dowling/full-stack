@@ -14,4 +14,4 @@ By Bradley Dowling and Ramiz
 - start searching!
 
 ### Additional Notes:
-The code for our crawler and PageRank algorithm is included, but the raw data collected by the crawler and used by PageRank is not. Page rankings are stored within each document that whoosh is indexed over. The whoosh index files are included here.
+The code for our crawler and PageRank algorithm is included, but the raw data collected by the crawler and used by PageRank is not. Page rankings are stored within each document that whoosh is indexed over. The whoosh index files are included here: `backend/whoosh_fs/index/`.
