@@ -1,7 +1,7 @@
 # Full Stack Search Engine
 By Bradley Dowling and Ramiz
 ### Setup:
-- cd into `backend`
+- after cloning, cd into `backend`
 - install the virtual python environment with `python -m venv env` (NOTE: you may need to install venv as well)
 - activate the virtual environment with `env/Scripts/activate` (NOTE: this will be different if you have a mac/linux machine)
 - install flask with `pip install flask`
