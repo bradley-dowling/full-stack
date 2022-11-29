@@ -15,3 +15,5 @@ By Bradley Dowling and Ramiz Tanous
 
 ### Additional Notes:
 The code for our crawler and PageRank algorithm is included, but the raw data collected by the crawler and used by PageRank is not. Page rankings are stored within each document that whoosh is indexed over. The whoosh index files are included here: `backend/whoosh_fs/index/`. We also included the dataset collected during one of our longer scraping runs located here: `backend/whoosh_fs/sample_data`.
+
+If you need to rebuild the whoosh index, unzip `backend/whoosh_fs/raw.zip` and then run `backend/whoosh_fs/whoosh_index_writer.py`.
