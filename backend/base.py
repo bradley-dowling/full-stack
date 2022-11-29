@@ -28,3 +28,18 @@ def search(query=None, page_number=1):
     }
 
     return response_body
+
+@api.route('/get_author/<author>')
+def get_authors(author=None):
+    author_data = None
+    this_author = None
+    with open("authors.json", "r") as f:
+        author_data = json.load(f)
+        related_works = author_data.get(author)
+    
+    response_body = {
+        "author": author,
+        "related_works": related_works
+    }
+
+    return response_body
